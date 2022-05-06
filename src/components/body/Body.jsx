@@ -6,18 +6,16 @@ export const Body =()=>{
     return(<>
     <header>
      <h1 className="header-title">
-         {word.map((item)=>{
-             return  <span className={item.toLowerCase()}>{item}</span>
-         })}
-       
-        
+         {word.map((item,index)=>{
+             return  <span className={item.toLowerCase()} key={index}>{item}</span>
+         })} 
       </h1>
-      <div class="input-form">
+      <div className="input-form">
         <input type="search" />
       </div>
-      <div class="header-btn">
-          {button.map((item)=>{
-               return  <button>{item}</button>
+      <div className="header-btn">
+          {button.map((item,index)=>{
+               return  <button key={index}>{item}</button>
            })}
       </div> 
       </header>

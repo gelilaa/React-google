@@ -1,4 +1,6 @@
 import "./style.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBeer} from '@fortawesome/free-solid-svg-icons'
 
 
 
@@ -28,7 +30,7 @@ export const Header = ()=>{
       <div>
         <ul className="nav-bar-second-item">
           {listSecond}
-          <a className="navbar-second-item"href="#0" ><i className="fas fa-beer"></i></a>
+          <a className="navbar-second-item"href="#0" ><FontAwesomeIcon icon={faBeer} /></a>
           <a className="navbar-second-item"href="#0" ><img src="https://reactjs.org/logo-og.png" alt="user"/></a>
         </ul>
          </div>
